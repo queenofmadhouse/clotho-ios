@@ -6,6 +6,13 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		72C412652E75A18A00BDCE4B /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72C411592E732F6300BDCE4B /* WidgetKit.framework */; };
+		72C412662E75A18A00BDCE4B /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72C4115B2E732F6300BDCE4B /* SwiftUI.framework */; };
+		72C412712E75A18A00BDCE4B /* FocusLiveActivityExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 72C412642E75A18A00BDCE4B /* FocusLiveActivityExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		72F21D862E76CDE900336A8F /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 72F21D852E76CDDF00336A8F /* README.md */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		7211CABF2E71C37200C57C55 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -21,18 +28,110 @@
 			remoteGlobalIDString = 7211CAB02E71C37100C57C55;
 			remoteInfo = Clotho;
 		};
+		72C412252E75973B00BDCE4B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7211CAA92E71C37100C57C55 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 72C411FA2E758D4E00BDCE4B;
+			remoteInfo = FocusLiveActivity;
+		};
+		72C412282E75974E00BDCE4B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7211CAA92E71C37100C57C55 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 72C411FA2E758D4E00BDCE4B;
+			remoteInfo = FocusLiveActivity;
+		};
+		72C4122B2E75976500BDCE4B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7211CAA92E71C37100C57C55 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 72C411FA2E758D4E00BDCE4B;
+			remoteInfo = FocusLiveActivity;
+		};
+		72C4126F2E75A18A00BDCE4B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7211CAA92E71C37100C57C55 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 72C412632E75A18A00BDCE4B;
+			remoteInfo = FocusLiveActivityExtension;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		72564C5E2E7238160030569C /* Embed ExtensionKit Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(EXTENSIONS_FOLDER_PATH)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			name = "Embed ExtensionKit Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72C4122A2E75974E00BDCE4B /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				72C412712E75A18A00BDCE4B /* FocusLiveActivityExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		7211CAB12E71C37100C57C55 /* Clotho.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Clotho.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7211CABE2E71C37200C57C55 /* ClothoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClothoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7211CAC82E71C37200C57C55 /* ClothoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClothoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		72C411592E732F6300BDCE4B /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		72C4115B2E732F6300BDCE4B /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		72C412642E75A18A00BDCE4B /* FocusLiveActivityExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = FocusLiveActivityExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		72F21D852E76CDDF00336A8F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		7273B46E2E721F9900A5C031 /* Exceptions for "Clotho" folder in "Clotho" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 7211CAB02E71C37100C57C55 /* Clotho */;
+		};
+		72C412752E75A18A00BDCE4B /* Exceptions for "FocusLiveActivity" folder in "FocusLiveActivityExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 72C412632E75A18A00BDCE4B /* FocusLiveActivityExtension */;
+		};
+		72C4127C2E75A32000BDCE4B /* Exceptions for "Clotho" folder in "FocusLiveActivityExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				FocusActivityAttributes.swift,
+			);
+			target = 72C412632E75A18A00BDCE4B /* FocusLiveActivityExtension */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		7211CAB32E71C37100C57C55 /* Clotho */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				7273B46E2E721F9900A5C031 /* Exceptions for "Clotho" folder in "Clotho" target */,
+				72C4127C2E75A32000BDCE4B /* Exceptions for "Clotho" folder in "FocusLiveActivityExtension" target */,
+			);
 			path = Clotho;
+			sourceTree = "<group>";
+		};
+		72C412672E75A18A00BDCE4B /* FocusLiveActivity */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				72C412752E75A18A00BDCE4B /* Exceptions for "FocusLiveActivity" folder in "FocusLiveActivityExtension" target */,
+			);
+			path = FocusLiveActivity;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -59,13 +158,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		72C412612E75A18A00BDCE4B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72C412662E75A18A00BDCE4B /* SwiftUI.framework in Frameworks */,
+				72C412652E75A18A00BDCE4B /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		7211CAA82E71C37100C57C55 = {
 			isa = PBXGroup;
 			children = (
+				72F21D852E76CDDF00336A8F /* README.md */,
 				7211CAB32E71C37100C57C55 /* Clotho */,
+				72C412672E75A18A00BDCE4B /* FocusLiveActivity */,
+				72C411582E732F6300BDCE4B /* Frameworks */,
 				7211CAB22E71C37100C57C55 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -76,8 +187,18 @@
 				7211CAB12E71C37100C57C55 /* Clotho.app */,
 				7211CABE2E71C37200C57C55 /* ClothoTests.xctest */,
 				7211CAC82E71C37200C57C55 /* ClothoUITests.xctest */,
+				72C412642E75A18A00BDCE4B /* FocusLiveActivityExtension.appex */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		72C411582E732F6300BDCE4B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				72C411592E732F6300BDCE4B /* WidgetKit.framework */,
+				72C4115B2E732F6300BDCE4B /* SwiftUI.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -90,10 +211,16 @@
 				7211CAAD2E71C37100C57C55 /* Sources */,
 				7211CAAE2E71C37100C57C55 /* Frameworks */,
 				7211CAAF2E71C37100C57C55 /* Resources */,
+				72564C5E2E7238160030569C /* Embed ExtensionKit Extensions */,
+				72C4122A2E75974E00BDCE4B /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				72C412262E75973B00BDCE4B /* PBXTargetDependency */,
+				72C412292E75974E00BDCE4B /* PBXTargetDependency */,
+				72C4122C2E75976500BDCE4B /* PBXTargetDependency */,
+				72C412702E75A18A00BDCE4B /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				7211CAB32E71C37100C57C55 /* Clotho */,
@@ -145,6 +272,28 @@
 			productReference = 7211CAC82E71C37200C57C55 /* ClothoUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		72C412632E75A18A00BDCE4B /* FocusLiveActivityExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 72C412722E75A18A00BDCE4B /* Build configuration list for PBXNativeTarget "FocusLiveActivityExtension" */;
+			buildPhases = (
+				72C412602E75A18A00BDCE4B /* Sources */,
+				72C412612E75A18A00BDCE4B /* Frameworks */,
+				72C412622E75A18A00BDCE4B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				72C412672E75A18A00BDCE4B /* FocusLiveActivity */,
+			);
+			name = FocusLiveActivityExtension;
+			packageProductDependencies = (
+			);
+			productName = FocusLiveActivityExtension;
+			productReference = 72C412642E75A18A00BDCE4B /* FocusLiveActivityExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -166,6 +315,9 @@
 						CreatedOnToolsVersion = 16.4;
 						TestTargetID = 7211CAB02E71C37100C57C55;
 					};
+					72C412632E75A18A00BDCE4B = {
+						CreatedOnToolsVersion = 16.4;
+					};
 				};
 			};
 			buildConfigurationList = 7211CAAC2E71C37100C57C55 /* Build configuration list for PBXProject "Clotho" */;
@@ -185,6 +337,7 @@
 				7211CAB02E71C37100C57C55 /* Clotho */,
 				7211CABD2E71C37200C57C55 /* ClothoTests */,
 				7211CAC72E71C37200C57C55 /* ClothoUITests */,
+				72C412632E75A18A00BDCE4B /* FocusLiveActivityExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -194,6 +347,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72F21D862E76CDE900336A8F /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,6 +359,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		7211CAC62E71C37200C57C55 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72C412622E75A18A00BDCE4B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -235,6 +396,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		72C412602E75A18A00BDCE4B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -247,6 +415,23 @@
 			isa = PBXTargetDependency;
 			target = 7211CAB02E71C37100C57C55 /* Clotho */;
 			targetProxy = 7211CAC92E71C37200C57C55 /* PBXContainerItemProxy */;
+		};
+		72C412262E75973B00BDCE4B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			targetProxy = 72C412252E75973B00BDCE4B /* PBXContainerItemProxy */;
+		};
+		72C412292E75974E00BDCE4B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			targetProxy = 72C412282E75974E00BDCE4B /* PBXContainerItemProxy */;
+		};
+		72C4122C2E75976500BDCE4B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			targetProxy = 72C4122B2E75976500BDCE4B /* PBXContainerItemProxy */;
+		};
+		72C412702E75A18A00BDCE4B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 72C412632E75A18A00BDCE4B /* FocusLiveActivityExtension */;
+			targetProxy = 72C4126F2E75A18A00BDCE4B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -379,14 +564,18 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 4KA24GT4LH;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Clotho/Info.plist;
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -407,14 +596,18 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 4KA24GT4LH;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Clotho/Info.plist;
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -500,6 +693,60 @@
 			};
 			name = Release;
 		};
+		72C412732E75A18A00BDCE4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4KA24GT4LH;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FocusLiveActivity/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = FocusLiveActivity;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.kalachik.Clotho.FocusLiveActivity;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		72C412742E75A18A00BDCE4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4KA24GT4LH;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FocusLiveActivity/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = FocusLiveActivity;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.kalachik.Clotho.FocusLiveActivity;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -535,6 +782,15 @@
 			buildConfigurations = (
 				7211CAD92E71C37200C57C55 /* Debug */,
 				7211CADA2E71C37200C57C55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		72C412722E75A18A00BDCE4B /* Build configuration list for PBXNativeTarget "FocusLiveActivityExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				72C412732E75A18A00BDCE4B /* Debug */,
+				72C412742E75A18A00BDCE4B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

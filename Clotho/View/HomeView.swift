@@ -8,21 +8,41 @@
 import SwiftUI
 
 struct HomeView: View {
-    
-    var vm: ViewModel
+    @ObservedObject var vm: ViewModel
     
     var body: some View {
-        VStack {
-            Text(vm.homeButtonText)
-                .font(.title)
-                .background(Rectangle().fill(Color.blue).frame(width: 300, height: 100).cornerRadius(10))
-                .padding(.top, 100)
+        VStack(spacing: 20) {
+            FocusCard {
+                VStack {
+                    Text("Clotho App").font(.title.weight(.bold))
+                    Text("Start a focus session to tackle your productivity and build better habits!")
+                        .multilineTextAlignment(.center)
+                        .font(.callout)
+                }
+            }
+            
+            HStack() {
+                FocusCard {
+                    VStack {
+                        Text("\(vm.getSessionsCount())").font(.title.bold())
+                        Text("Focus sessions")
+                    }
+                }
+                
+                FocusCard {
+                    VStack {
+                        Text(vm.formattedTotalFocusedTime()).font(.title.bold())
+                        Text("Total focused")
+                    }
+                }
+            }
+            
             Spacer()
         }
-        .padding()
+        .padding(.top, 40)
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background(LinearGradient(colors: [Color(red: 0.95, green: 0.85, blue: 0.65),
+                                            Color(red: 0.85, green: 0.60, blue: 0.95)],
+                                   startPoint: .topLeading, endPoint: .bottomTrailing))
     }
-}
-
-#Preview {
-    HomeView(vm: ViewModel())
 }
